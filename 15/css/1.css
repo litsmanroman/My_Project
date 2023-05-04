@@ -1,0 +1,314 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+
+.button_empty {
+    background-color: aqua;
+
+}
+
+.button_1 {
+    background-color: #fd0000;
+    top: 100px;
+    left: 100px;
+
+}
+
+.button_2 {
+    background-color: rgb(112, 112, 243);
+    top: 100px;
+    left: 200px;
+
+}
+
+.button_3 {
+    background-color: rgb(0, 199, 0);
+    top: 100px;
+    left: 300px;
+
+}
+
+.button_4 {
+    background-color: rgb(218, 88, 164);
+    top: 100px;
+    left: 400px;
+
+
+}
+
+.button_5 {
+    background-color: rgb(151, 151, 151);
+    top: 200px;
+    left: 100px;
+
+}
+
+.button_6 {
+    background-color: rgb(246, 250, 23);
+    top: 200px;
+    left: 200px;
+
+}
+
+.button_7 {
+    background-color: rgb(236, 193, 241);
+    top: 200px;
+    left: 300px;
+
+}
+
+.button_8 {
+    background-color: rgb(250, 95, 23);
+    top: 200px;
+    left: 400px;
+
+}
+
+.button_9 {
+    background-color: rgb(23, 159, 250);
+    top: 300px;
+    left: 100px;
+
+}
+
+.button_10 {
+    background-color: rgb(11, 245, 128);
+    top: 300px;
+    left: 200px;
+}
+
+.button_11 {
+    background-color: rgb(250, 23, 148);
+    top: 300px;
+    left: 300px;
+}
+
+.button_12 {
+    background-color: rgb(148, 23, 250);
+    top: 300px;
+    left: 400px;
+}
+
+.button_13 {
+    background-color: rgb(23, 250, 239);
+    top: 400px;
+    left: 100px;
+}
+
+.button_14 {
+    background-color: rgb(114, 250, 23);
+    top: 400px;
+    left: 200px;
+}
+
+.button_15 {
+    background-color: rgb(250, 189, 23);
+    top: 400px;
+    left: 300px;
+}
+
+.button_16 {
+    background-color: rgba(255, 255, 255, 0.884);
+    top: 400px;
+    left: 400px;
+}
+
+.button_empty {
+    
+}
+
+.but_style {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    font-size: 80px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    box-shadow: 0px 1px 100px #000000ce;
+    
+}
+
+.box_tim {
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    width: 280px;
+    height: 100px;
+    border: 5px solid rgb(202, 206, 202);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+background-color: #000;
+z-index: 3;
+  }
+
+  .timer {
+    padding: 10px ;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    align-items:center ;
+    margin: auto;
+
+
+  }
+
+.counter {
+    
+    position: absolute;
+    /* top: 200px; */
+    left: 650px;
+    background-color: #888888c2;
+    z-index: 1;
+
+
+}
+.counter_window {
+    width: 176px;
+    height: 318px;
+    background-color: rgba(255, 255, 255, 0);
+    /* border: 1px solid #f70707; */
+    z-index: 2;
+    position: absolute;
+   
+}
+.window_top_border {
+    height: 275px;
+    background-color: #fff;
+}
+.window_central {
+    
+    height: 150px;
+    box-shadow: 0px 1px 10px #000000ce;
+}
+.window_bottom_border {
+    
+    height: 500px;
+    background-color: #fff;
+}
+
+.counter_row {
+position: relative;
+top: 200px;
+display: flex;
+gap: 10px;
+}
+.counter_hundreds, .counter_dozens, .counter_units {
+    line-height: 96px;
+    font-size: 96px;
+   position: relative;
+    color: white;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    
+}
+.figures {
+    border: 2px solid #f3ecec;
+}
+
+.counter_hundreds {
+
+}
+
+.counter_dozens {
+}
+.counter_units {
+
+}
+
