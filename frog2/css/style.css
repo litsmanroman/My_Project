@@ -1,0 +1,305 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+.wraper {}
+
+.content {
+  width: 510px;
+  height: 600px;
+  margin: auto;
+  /* border: rgb(255, 0, 0) solid 1px; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: url(../img/mukha2.gif), pointer;
+  box-shadow: 0px 0px 50px 20px rgb(11, 223, 21);
+  border-radius: 50px;
+  margin-top: 50px;
+
+}
+
+.tong {
+  position: absolute;
+  top: 5px;
+  left: -230px;
+  visibility: hidden;
+  z-index: 1;
+
+}
+
+.frog_tong {
+
+  width: 280px;
+  /* border: 1px solid #000; */
+
+}
+
+.toch {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 190px;
+  right: 40px;
+  /* border: 1px solid #000; */
+  z-index: 3;
+
+}
+
+.toch:hover .tong {
+  visibility: visible;
+  cursor: none;
+  opacity: 0;
+  transition-duration: 0.2s;
+}
+
+.eyes_tt {
+  position: absolute;
+  display: flex;
+  /* flex-direction: row; */
+  left: -258px;
+  top: -12px;
+  visibility: hidden;
+}
+
+.frog_eye_ltt {
+  width: 50px;
+}
+
+.frog_eye_rtt {
+  width: 50px;
+}
+
+.toch:hover .eyes_tt {
+  visibility: visible;
+}
+
+.gif {
+  position: absolute;
+  left: -230px;
+  top: 200px;
+  opacity: 0.5;
+  visibility: hidden;
+}
+
+.toch:hover .gif {
+  visibility: visible;
+}
+
+.frog {
+  width: 300px;
+  height: 400px;
+  /* border: 1px solid #000; */
+  position: absolute;
+  background: url(../img/frog.png)0 0/contain no-repeat;
+  margin-top: 165px;
+  display: flex;
+  justify-content: center;
+  /* padding: 40px; */
+  z-index: 1;
+}
+
+
+
+.eyes {
+  width: 65px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: -10px;
+  /* border: 1px solid #000; */
+}
+
+.eye_box_l .eye_box_r {
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #050505; */
+ 
+
+}
+.frog_eye_l {
+  width: 15px;
+  height: 15px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 1px solid #000; 
+}
+
+.frog_eye_r {
+  width: 15px;
+  height: 15px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+
+.kk {
+  position: absolute;
+  width: 500px;
+  height: 120px;
+  top: 420px;
+  rotate: -3deg;
+}
+
+.flowers {}
+
+.flow1 {
+  position: absolute;
+  top: 10px;
+  /* left: -15px; */
+  width: 80px;
+  /* z-index: 6; */
+}
+
+.flow2 {
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  width: 80px;
+  /* rotate: 180deg; */
+}
+
+.flow3 {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 120px;
+}
+
+.flow4 {
+  position: absolute;
+  top: 300px;
+  left: -10px;
+  width: 130px;
+  rotate: 45deg;
+}
+
+.flow5 {
+  position: absolute;
+  top: 30px;
+  left: 330px;
+  width: 150px;
+  rotate: 90deg;
+}
+
+.flow6 {
+  position: absolute;
+  top: 530px;
+  left: 100px;
+  width: 80px;
+}
+
+.flow7 {
+  position: absolute;
+  top: 500px;
+  left: 350px;
+  width: 150px;
+  rotate: 45deg;
+}
+
+.flow8 {
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  width: 40px;
+  rotate: 45deg;
+}
+
+.flow9 {
+  position: absolute;
+  top: 320px;
+  left: 400px;
+  width: 40px;
+  rotate: 45deg;
+}
+
